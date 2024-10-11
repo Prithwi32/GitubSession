@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 20px;
+}
+.center ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.center ul li{
+    list-style: none;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.first{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first span{
+    font-size: 45px;
+    padding: 50px 10px 10px;
+}
+
+.first p{
+    font-size: 25px;
+    padding: 10px 10px 20px;
+}
+
+.second{
+    margin-top: 20px;
+}
+
+.second ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+}
+
+.second ul{
+    margin-left: 20px;
+}
