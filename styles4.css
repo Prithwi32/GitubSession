@@ -1,47 +1,207 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    margin: 20px;
+html {
+    scroll-behavior: smooth;
 }
-.center ul{
+
+body {
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    letter-spacing: 0.3px;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.center ul {
     display: flex;
     justify-content: space-evenly;
 }
 
-.center ul li{
+.center ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.center ul li {
     list-style: none;
     cursor: pointer;
     font-size: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #444;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.first{
+.center ul li:hover {
+    background-color: #555;
+    transform: scale(1.1);
+}
+
+.first {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 20px;
 }
 
-.first span{
+.first span {
     font-size: 45px;
-    padding: 50px 10px 10px;
+    padding: 20px 20px 0px;
 }
 
-.first p{
-    font-size: 25px;
-    padding: 10px 10px 20px;
+.first p {
+    font-size: 23px;
+    padding: 10px;
+    max-width: 800px;
+    text-align: center;
 }
 
-.second{
+.second {
     margin-top: 20px;
 }
 
-.second ol {
-    list-style-type: decimal;
+h1 {
+    font-size: 40px;
+    color: #222;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #333;
+    margin-top: 15px;
+}
+
+.large-title {
+    font-size: 20px;
+}
+
+.second ol,
+.second ul {
     margin-left: 20px;
 }
 
-.second ul{
-    margin-left: 20px;
+.second li {
+    margin-bottom: 10px;
+}
+
+.git,
+.github,
+.opensource {
+    background-color: white;
+    padding: 20px;
+    margin-top: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease;
+}
+
+.git:hover,
+.github:hover,
+.opensource:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.opensource a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.opensource a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .center ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .center ul li {
+        text-align: center;
+        font-size: 24px;
+        padding: 8px;
+        margin-bottom: 10px;
+        width: -webkit-fill-available;
+    }
+
+    .first span {
+        font-size: 36px;
+        padding: 20px 20px 0px;
+        text-align: center;
+    }
+
+    .first p {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .second ol, .second ul {
+        margin-left: 10px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .git, .github, .opensource {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .center ul li{
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    .first span {
+        font-size: 30px;
+    }
+
+    .first p {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 14px;
+    }
 }
